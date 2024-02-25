@@ -43,7 +43,7 @@
         </p>
       </div>
     </div>
-    <audio autoplay>
+    <audio autoplay loop class="playMusic">
       <source src="audio.mp3" type="audio/mp3">
     </audio>
   </body>
@@ -66,6 +66,19 @@
       document.querySelector(".wrapper").classList.remove("active");
       btn.style.display = "block";
     });
-  
+  (function () {
+
+    function playMusic(){
+      var myAudio = document.getElementById('playAudio');
+      if (myAudio.duration > 0 && !myAudio.paused) {
+          //Its playing...do your job
+
+      } else {
+        myAudio.play()
+        //Not playing...maybe paused, stopped or never played.
+
+      }
+    }
+
   </script>
 </html>
