@@ -59,14 +59,16 @@
     var btn = document.querySelector("button");
     var closeBtn = document.querySelector(".fa-xmark");
     btn.addEventListener("click", () => {
+      playMusic()
       document.querySelector(".wrapper").classList.add("active");
       btn.style.display = "none";
-        playMusic()
+        
     });
     closeBtn.addEventListener("click", () => {
+      playMusic()
       document.querySelector(".wrapper").classList.remove("active");
       btn.style.display = "block";
-        playMusic()
+        
     });
 
   </script>
