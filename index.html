@@ -43,7 +43,7 @@
         </p>
       </div>
     </div>
-    <audio controls autoplay loop id="playAudio">
+    <audio  autoplay loop id="playAudio">
       <source src="audio.mp3" >
     </audio>
   </body>
@@ -61,10 +61,12 @@
     btn.addEventListener("click", () => {
       document.querySelector(".wrapper").classList.add("active");
       btn.style.display = "none";
+        playMusic()
     });
     closeBtn.addEventListener("click", () => {
       document.querySelector(".wrapper").classList.remove("active");
       btn.style.display = "block";
+        playMusic()
     });
 
   </script>
